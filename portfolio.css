@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#web_body{
+    background: url(images/moonnight.jpg);
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+
+}
+/*for d header nav*/
+#topnav{
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    max-width: 1200px;
+    
+}
+
+#nav_toggler{
+    color: white;
+    font-size: 22px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#topnav a{
+    text-decoration: none;
+}
+
+#topnav a #header_name{
+    font-weight: 800;
+    font-size: 6vw;
+    color: #18bb18;
+}
+
+/*for d toggle nav*/
+#toggle_nav{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.885);
+    position: fixed;
+    margin: 10px;
+    height: calc(100vh - 70px);
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 1s;
+    display: none;
+}
+
+#toggle_nav ul{
+    list-style: none;
+
+}
+
+#toggle_nav ul li{
+    line-height: 40px;
+}
+
+#toggle_nav ul li a{
+    
+    display: block;
+     color: white;
+     width: 100%;
+     text-decoration: none;
+     opacity: 0;
+     transition:  2s;
+}
+
+#toggle_nav ul li a:hover{
+    transition: 0.3s;
+    font-weight: 800;
+    color: green;
+}
+
+
+
+
+/*centered the info div in the middle of the page*/
+#open_info{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+}
+
+#open_info h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 7vw;
+    font-weight: 700;
+    line-height: 35px;
+    color: #18bb18;
+    transition: all 0.5s;
+}
+
+#open_info p{
+    
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+    
+}
+
+
+#nav_in_info a{
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+#nav_in_info a:hover{
+    border-bottom: 2px solid green;
+    
+    
+}
+
+
+
+/*styling for d social media buttons*/
+#open_info #socialbtn{
+    margin-top: 20px;
+}
+
+#open_info #socialbtn a{
+    margin-right: 5px;
+}
+
+#open_info #socialbtn a:last-child{
+    margin-right: 0;
+}
+
+#open_info #socialbtn span{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.118);
+    transition: all 0.5s;
+}
+
+#open_info #socialbtn span:hover{
+    background: #18bb18;
+}
+
+/*design for the body of the remaining pages aside of index page*/
+#main_content{
+    background: black;
+    padding-top: 70px;
+    height: auto;
+    max-width: 1200px;
+
+}
+
+#comment_content{
+    background: red;
+    margin-top: 30px;
+    height: auto;
+    max-width: 1000px;
+}
+
+
+/*for d about page*/
+#page_heading{
+    color: white;
+    
+    
+}
+
+#sub_title{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+#sub_title p{
+    color: rgba(248, 244, 244, 0.775);
+    margin-bottom: 0;
+}
+ 
+#sub_title #ruler{
+    background-color: #18bb18;
+    margin: 12px 0 0 10px;
+    width: 100px;
+    border-width: 2px;
+    
+}
+
+/*styling the profile image*/
+#profile_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+
+
+/*styling intro content*/
+#intro_div p{
+    color: white;
+}
+
+/*styling d watchwords section*/
+#watchwords_box{
+    margin: 10px auto;
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.097);
+    position: relative;
+}
+ 
+#watchwords_box h5{
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*styling d Techologies stack section*/
+#stack_box{
+    margin: 10px auto;
+    width: 100%;
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.097);
+    
+}
+
+#stack_box p{
+    color: white;
+    line-height: 60px;
+}
+
+
+/*styling d hobbies & interest section*/
+
+#hobbies_box{
+    margin: 10px auto;
+    width: 100%;
+}
+
+#hobbies_box #hobbies_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hobbies_box #hobbies_text p{
+    margin: 0 0 3px 0;
+    color: white;
+}
+
+/*for d skills page*/
+#skills_row{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#skills_box{
+    
+    background: rgba(255, 255, 255, 0.07);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+#skills_box #icon{
+    background: green;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    box-shadow: -5px -5px rgba(255, 255, 255, 0.124);
+    margin: 10px 0 10px 0;
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for the responsieve screen of md*/
+@media screen and (min-width:768px){
+   
+    #topnav a #header_name{
+        font-size: 30px;
+    }
+    
+    #open_info h2{
+        font-size: 5vw;
+    }
+
+    #skills_box{
+        height: 250px;
+    }
+}
+
+
+
+
+/*for the responsieve screen of lg*/
+@media screen and (min-width:992px){
+    #open_info{
+        width: 80%;
+        margin: 0 auto;
+        text-align: left; 
+    }
+    #topnav a #header_name{
+        font-size: 3vw;
+    }
+
+    #open_info h2{
+    font-size: 3vw;
+    }
+
+    
+
+    
+}
