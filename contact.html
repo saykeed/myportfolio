@@ -22,9 +22,51 @@
 </head>
 <body id="web_body">
     
-    <div class="container-fluid px-4 mx-lg-auto text-center">
-        <h1 style="color: rgba(255, 255, 255, 0.59);margin-bottom: 160px;">Ooooops.. We are sorry, this page is under construction</h1>
-        <a href="index.html" style="background-color: green;padding: 10px;color: white;border-radius: 20px;">Back to Home</a>
+    <div class="container-fluid px-4 mx-lg-auto" id="main_content">
+        <nav id="topnav" class="px-3 mx-lg-auto d-flex justify-content-between align-items-center fixed-top">
+            <a href="index.html"><h3 id="header_name">Abubakri Sherif Opeyemi</h3></a>
+            <i class="fas fa-bars d-lg-none" id="nav_toggler" onclick="displayNav()"></i>
+            <!--for d navbar in d header-->
+            <div id="nav_in_info" class="d-none d-lg-block">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="skills.html">Skills & Services</a>
+                <a href="port.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <!--collapsed navmenu for small screens-->
+        <div id="toggle_nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="skills.html">Skills & Services</a></li>
+                <li><a href="port.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="sub_title">
+            <p>CONTACT</p> 
+            <hr id="ruler">
+        </div>
+        
+        <h2 id="page_heading">NOW THAT YOU ARE HERE<span></span></h2>
+      
+        <div id="contact_form">
+            <form action="">
+                <input type="text" name="fullname" id="fullname" placeholder="Your Name">
+                <input type="email" name="email" id="email" placeholder="Your Email">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <textarea name="message" id="message" cols="10" rows="10" placeholder="Your Message"></textarea>
+                <input type="button" value="Send Message" id="sendbutton">
+                
+            </form>
+        </div>
+
+    
     </div>
 </body>
+<script src="js/portfolio.js"></script>
 </html>

@@ -22,9 +22,82 @@
 </head>
 <body id="web_body">
     
-    <div class="container-fluid px-4 mx-lg-auto text-center">
-        <h1 style="color: rgba(255, 255, 255, 0.59);margin-bottom: 160px;">Ooooops.. We are sorry, this page is under construction</h1>
-        <a href="index.html" style="background-color: green;padding: 10px;color: white;border-radius: 20px;">Back to Home</a>
+    <div class="container-fluid px-4 mx-lg-auto" id="main_content">
+        <nav id="topnav" class="px-3 mx-lg-auto d-flex justify-content-between align-items-center fixed-top">
+            <a href="index.html"><h3 id="header_name">Abubakri Sherif Opeyemi</h3></a>
+            <i class="fas fa-bars d-lg-none" id="nav_toggler" onclick="displayNav()"></i>
+            <!--for d navbar in d header-->
+            <div id="nav_in_info" class="d-none d-lg-block">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="skills.html">Skills & Services</a>
+                <a href="port.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <!--collapsed navmenu for small screens-->
+        <div id="toggle_nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="skills.html">Skills & Services</a></li>
+                <li><a href="port.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="sub_title">
+            <p>PORTFOLIO</p> 
+            <hr id="ruler">
+        </div>
+        
+        <h2 id="page_heading">SEE MY SKILLS IN ACTION<span></span></h2>
+      
+        <div id="port_prev_btn">
+            <a class="allbut" onclick="allStack()">ALL</a>
+            <a class="cssbut" onclick="css()">CSS</a>
+            <a class="bootbut" onclick="bootStrap()">BOOTSTRAP</a>
+            <a class="jsbut" onclick="js()">JAVASCRIPT</a>
+            <a class="vuebut" onclick="vue()">VUE-JS</a>
+            <a class="reactbut" onclick="react()">REACT-JS</a>
+        </div>
+
+        <div id="port_gallery">
+            <div id="port_work">
+                <div id="portfolio_text">
+                    <h5>Portfolio</h5>
+                    <p class="stack_used">CSS, BOOTSTRAP, JAVASCRIPT</p>
+                    <p id="icon"><a class="fas fa-anchor" href="#"></a><i class="fas fa-plus"></i></p>
+                </div>
+            </div>
+            <div id="huddle_work">
+                <div id="portfolio_text">
+                    <h5>Huddle land page</h5>
+                    <p class="stack_used">CSS, BOOTSTRAP</p>
+                    <p id="icon"><a class="fas fa-anchor" href="#"></a><i class="fas fa-plus"></i></p>
+                </div>
+            </div>
+            <div id="nimc_work">
+                <div id="portfolio_text">
+                    <h5>Nimc land page</h5>
+                    <p class="stack_used">CSS, BOOTSTRAP</p>
+                    <p id="icon"><a class="fas fa-anchor" href="#"></a><i class="fas fa-plus"></i></p>
+                </div>
+            </div>
+            <div id="testimony_work">
+                <div id="portfolio_text">
+                    <h5>Testimony</h5>
+                    <p class="stack_used">CSS GRID</p>
+                    <p id="icon"><a class="fas fa-anchor" href="#"></a><i class="fas fa-plus"></i></p>
+                </div>
+            </div>
+            <div id="gallery_textarea"><h3></h3></div>
+        </div>
+        
+    
     </div>
 </body>
+<script src="js/portfolio.js"></script>
+<script src="js/port.js"></script>
 </html>
