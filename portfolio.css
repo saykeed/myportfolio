@@ -12,6 +12,20 @@
     height: 100vh; 
 
 }
+
+/*to highlight the current page nav link*/
+.current_nav{
+    border-bottom: 2px solid green;
+}
+
+.current_toggle_nav{
+    background: rgba(128, 128, 128, 0.494);
+    padding: 0 10px;
+    
+}
+
+
+
 /*for d header nav*/
 #topnav{
     background: rgba(0, 0, 0, 0.919);
@@ -47,13 +61,14 @@
     background-color: rgba(0, 0, 0, 0.885);
     position: fixed;
     margin: 10px;
-    height: calc(100vh - 70px);
+    height: 30px;
     top: 50px;
     left: 0;
     right: 0;
     z-index: 1000;
     transition: all 1s;
-    display: none;
+    opacity: 0;
+    overflow: hidden;
 }
 
 #toggle_nav ul{
@@ -66,18 +81,16 @@
 }
 
 #toggle_nav ul li a{
-    
     display: block;
      color: white;
      width: 100%;
      text-decoration: none;
      opacity: 0;
-     transition:  2s;
+     transition:  1s;
 }
 
 
 #toggle_nav ul li a:hover{
-    transition: 0.3s;
     font-weight: 800;
     color: green;
 }
@@ -123,8 +136,7 @@
 
 #nav_in_info a:hover{
     border-bottom: 2px solid green;
-    
-    
+      
 }
 
 
@@ -282,6 +294,7 @@
     align-items: center;
     margin: 15px 0;
     padding: 10px;
+    transition: all 1s;
 }
 
 #skills_box #icon{
@@ -291,9 +304,16 @@
     border-radius: 5px;
     box-shadow: -5px -5px rgba(255, 255, 255, 0.124);
     margin: 10px 0 10px 0;
-      
+      transition: all 1s;
 }
 
+#skills_box:hover{
+    background: green;
+}
+
+#skills_box:hover #icon{
+    background: white;
+}
 
 /*styling d portfolio page*/
 
@@ -358,9 +378,15 @@
     background-size: cover;
 }
 
+#clipboard_work{
+    background: url(images/clipboard.JPG);
+    background-size: cover;
+}
 
 
-#port_work, #huddle_work, #nimc_work, #testimony_work{
+
+
+.gen_port{
     width: 240px;
     height: 150px;
     margin: 20px;
@@ -374,24 +400,27 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    display: none;
-    transition: all 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s;
 }
 
 #portfolio_text h5{
     color: white;
-    margin: 5px auto;
+    margin-left: -500px;
+    transition: all 0.5s;
 }
 
 #portfolio_text .stack_used{
     color: white;
     font-size: 14px;
+    margin-right: -500px;
+    transition: all 0.5s;
 }
 
-#portfolio_text #icon{
-    margin: 5px 0;
-    padding: 0;
-}
 
 #portfolio_text #icon a, #portfolio_text #icon i{
     text-decoration: none;
@@ -411,23 +440,23 @@
     
 }
 
-
-
-#port_work:hover #portfolio_text{
-    display: block;
+.gen_port:hover #portfolio_text{
+    opacity: 1;
 }
 
-#huddle_work:hover #portfolio_text{
-    display: block;
+.gen_port:hover #portfolio_text h5{
+    margin-left: 0;
+   
 }
 
-#nimc_work:hover #portfolio_text{
-    display: block;
+.gen_port:hover #portfolio_text .stack_used{
+    margin-right: 0;
 }
 
-#testimony_work:hover #portfolio_text{
-    display: block;
-}
+
+
+
+
 
 
 
@@ -463,11 +492,11 @@
 
 
 #sendbutton{
-    width: 40%;
+    width: 200px;
     color: white;
     background-color: #18bb18a8;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
     margin: 0 auto;
