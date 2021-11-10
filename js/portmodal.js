@@ -42,7 +42,7 @@ let callModal = function (modalName) {
     modalDiv.style.display = "block";
     topTitle.innerHTML = modalName;
     innerHeading.innerHTML = modalName + " Preview";
-    innerImg.innerHTML = '<img src="images/' + modalName + '.jpg" class="modal_image">';
+    innerImg.innerHTML = '<img src="images/' + modalName + '.JPG" class="modal_image">';
     techPara.innerHTML = modal_info.techUsed;
     projectLink.innerHTML = modal_info.liveSite;
     projectLink.setAttribute("href", "#");
