@@ -68,44 +68,67 @@
                 <div id="portfolio_text">
                     <h5>My-Portfolio</h5>
                     <p class="stack_used">CSS, BOOTSTRAP, JAVASCRIPT</p>
-                    <p id="icon"><a class="fas fa-anchor" target="blank" href="https://github.com/saykeed/myportfolio"></a><i class="fas fa-plus"></i></p>
+                    <p id="icon"><a class="fas fa-anchor" target="blank" href="https://github.com/saykeed/myportfolio"></a><i onclick="callModal('Portfolio')" class="fas fa-plus"></i></p>
                 </div>
             </div>
             <div id="huddle_work" class="gen_port">
                 <div id="portfolio_text">
                     <h5>Huddle land page</h5>
                     <p class="stack_used">CSS, BOOTSTRAP</p>
-                    <p id="icon"><a class="fas fa-anchor" target="blank" href="https://github.com/saykeed/huddlelandpage"></a><i class="fas fa-plus"></i></p>
+                    <p id="icon"><a class="fas fa-anchor" target="blank" href="https://github.com/saykeed/huddlelandpage"></a><i onclick="callModal('Huddle-landpage')" class="fas fa-plus"></i></p>
                 </div>
             </div>
             <div id="nimc_work" class="gen_port">
                 <div id="portfolio_text">
                     <h5>Nimc land page</h5>
                     <p class="stack_used">CSS, BOOTSTRAP</p>
-                    <p id="icon"><a class="fas fa-anchor" target="blank" href="saykeed.github.io"></a><i class="fas fa-plus"></i></p>
+                    <p id="icon"><a class="fas fa-anchor" target="blank" href="saykeed.github.io"></a><i onclick="callModal('Nimc')" class="fas fa-plus"></i></p>
                 </div>
             </div>
             <div id="testimony_work" class="gen_port">
                 <div id="portfolio_text">
                     <h5>Testimony</h5>
                     <p class="stack_used">CSS GRID</p>
-                    <p id="icon"><a class="fas fa-anchor" target="blank" href="#"></a><i class="fas fa-plus"></i></p>
+                    <p id="icon"><a class="fas fa-anchor" target="blank" href="#"></a><i onclick="callModal('Testimonial-grids')" class="fas fa-plus"></i></p>
                 </div>
             </div>
             <div id="clipboard_work" class="gen_port">
                 <div id="portfolio_text">
                     <h5>Clipboard</h5>
                     <p class="stack_used">CSS, BOOTSTRAP</p>
-                    <p id="icon"><a class="fas fa-anchor" target="blank" href="https://github.com/saykeed/clipboard-land-page"></a><i class="fas fa-plus"></i></p>
+                    <p id="icon"><a class="fas fa-anchor" target="blank" href="https://github.com/saykeed/clipboard-land-page"></a><i onclick="callModal('Clipboard')" class="fas fa-plus"></i></p>
+                </div>
+            </div>
+            <!--empty div for vue and react reesponse-->
+            <div id="gallery_textarea"><h3></h3></div>
+        </div>
+
+
+                <!--empty content for d modal-->
+            <div id="modal_section">
+                <p id="modal_title"></p>
+                <span id="close_modal" onclick="closeModal()">&times;</span>
+
+                <div id="modal_inner">
+                    <h3></h3>
+                    <div id="modal_Img"></div>
+                    <h4>Project Information</h4>
+                    <p><b>Technologies Used:</b></p>
+                    <p id="tech"></p>
+                    <p><b>Description:</b></p>
+                    <p id="description"></p>
+                    <p><b>Project URL:</b></p>
+                    <a id="link"></a>
+                    
                 </div>
             </div>
 
-            <div id="gallery_textarea"><h3></h3></div>
-        </div>
-        
-    
     </div>
+
+   
+
 </body>
 <script src="js/portfolio.js"></script>
 <script src="js/port.js"></script>
+<script src="js/portmodal.js"></script>
 </html>

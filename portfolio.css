@@ -19,8 +19,8 @@
 }
 
 .current_toggle_nav{
-    background: rgba(128, 128, 128, 0.494);
-    padding: 0 10px;
+   
+    color: #18bb18 !important;
     
 }
 
@@ -176,7 +176,7 @@
     padding-top: 70px;
     height: auto;
     max-width: 1200px;
-
+    position: relative;
 }
 
 #comment_content{
@@ -324,6 +324,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    margin: 0 auto;
 }
 
 #port_prev_btn a{
@@ -338,7 +340,7 @@
 }
 
 #port_prev_btn a:hover{
-    background-color: #18bb18;
+    background-color: #18bb18 !important;
 }
 
 #port_gallery{
@@ -359,27 +361,27 @@
 
 
 #port_work{
-    background: url(images/portfolio.JPG);
+    background: url(images/Portfolio.JPG);
     background-size: cover;
 }
 
 #huddle_work{
-    background: url(images/huddle\ landpage.JPG);
+    background: url(images/Huddle-landpage.JPG);
     background-size: cover;
 }
 
 #nimc_work{
-    background: url(images/nimc.JPG);
+    background: url(images/Nimc.JPG);
     background-size: cover;
 }
 
 #testimony_work{
-    background: url(images/testimonial\ grids.JPG);
+    background: url(images/Testimonial-grids.JPG);
     background-size: cover;
 }
 
 #clipboard_work{
-    background: url(images/clipboard.JPG);
+    background: url(images/Clipboard.JPG);
     background-size: cover;
 }
 
@@ -510,9 +512,81 @@
 
 
 
+/*for d portfolo modal section*/
+#modal_section{
+    height: 100vh;
+    background-color: rgba(28, 24, 26, 0.960);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2222;
+    display: none;
+    color: white;
+
+}
+
+#modal_inner{
+    width: 90%;
+    height: 70%;
+    background-color: black;
+    margin: auto;
+    padding: 60px 10px;
+    overflow: auto;
+    color: white;
+}
+
+#modal_inner h4{
+    margin: 15px 0;
+}
+
+#modal_inner p{
+    margin: 0;
+}
+
+#modal_Img{
+    width: 100%;
+    height: 170px;
+    border: 1px solid white;
+    margin: 10px auto;
+}
+
+#modal_title{
+    text-align: center;
+    margin: 5px 0 100px;
+    font-style: italic;
+}
 
 
+#close_modal{
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
 
+#close_modal:hover{
+    color: #18bb18;
+    font-size: 35px;
+}
+
+.modal_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p#tech, p#description, a#link{
+    margin: 2px 0 10px;
+}
+
+a#link{
+    color: #18bb18;
+}
 
 
 
@@ -547,6 +621,15 @@
 
     #skills_box{
         height: 250px;
+    }
+
+    #modal_inner{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #modal_Img{
+        width: 300px;
     }
 }
 
